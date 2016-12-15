@@ -37,7 +37,7 @@ function ContactSensorAccessory(log, config) {
 		rejectUnauthorized: false
 	};
 
-	this.service = new Service.ContactSensorState();
+	this.service = new Service.ContactSensor();
 	this.client  = mqtt.connect(this.url, this.options);
 
 	var self = this;
