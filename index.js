@@ -48,7 +48,7 @@ function ContactSensorAccessory(log, config) {
 		data = JSON.parse(message);
 		if (data === null) return null;
 		self.value = parseInt(data, 10);
-		this.service.getCharacteristic(Characteristic.ContactSensorState).setValue(self.value ?
+		self.service.getCharacteristic(Characteristic.ContactSensorState).setValue(self.value ?
 				Characteristic.ContactSensorState.CONTACT_DETECTED : Characteristic.ContactSensorState.CONTACT_NOT_DETECTED);
 	});
 
