@@ -48,7 +48,7 @@ function ContactSensorAccessory(log, config) {
 		data = JSON.parse(message);
 		if (data === null) return null;
 		self.value = parseInt(data, 10);
-		service.getCharacteristic(Characteristic.ContactSensorState).setValue(self.value ?
+		this.service.getCharacteristic(Characteristic.ContactSensorState).setValue(self.value ?
 				Characteristic.ContactSensorState.CONTACT_DETECTED : Characteristic.ContactSensorState.CONTACT_NOT_DETECTED);
 	});
 
@@ -69,8 +69,6 @@ ContactSensorAccessory.prototype.getServices = function() {
 		.setCharacteristic(Characteristic.Model, "Door Sensor")
 		.setCharacteristic(Characteristic.SerialNumber, this.sn);
 
-	var service = new Service.ContactSensor();
-
-	return [informationService, service];
+	return [informationService, this.service];
 }
 
