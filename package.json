@@ -1,0 +1,35 @@
+{
+  "name": "homebridge-mqtt-contactsensor",
+  "version": "0.1.0",
+  "description": "A HomeBridge plugin for MQTT door contact sensors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heisice/homebridge-mqtt-contactsensor.git"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "homebridge-plugin",
+    "mqtt",
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "author": "Ki-soo Kim <heisice@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcchots/homebridge-mqtt-contactsensor/issues"
+  },
+  "homepage": "https://github.com/mcchots/homebridge-mqtt-contactsensor#readme",
+  "dependencies": {
+    "mqtt": "^1.12.0"
+  },
+  "devDependencies": {}
+}
