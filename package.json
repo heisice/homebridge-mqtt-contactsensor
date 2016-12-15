@@ -16,7 +16,7 @@
   ],
   "keywords": [
     "homebridge-plugin",
-    "mqtt",
+    "mqtt"
   ],
   "engines": {
     "node": ">=0.12.0",
