@@ -25,9 +25,9 @@
   "author": "Ki-soo Kim <heisice@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mcchots/homebridge-mqtt-contactsensor/issues"
+    "url": "https://github.com/heisice/homebridge-mqtt-contactsensor/issues"
   },
-  "homepage": "https://github.com/mcchots/homebridge-mqtt-contactsensor#readme",
+  "homepage": "https://github.com/heisice/homebridge-mqtt-contactsensor",
   "dependencies": {
     "mqtt": "^1.12.0"
   },
